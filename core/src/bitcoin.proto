@@ -154,7 +154,7 @@ message TransactionConfidence {
   optional Source source = 7;
 }
 
-/** A bitcoin transaction */
+/** A vertcoin transaction */
 
 message Transaction {
   /**
@@ -239,7 +239,7 @@ message Extension {
   required bool mandatory = 3;
 }
 
-/** A bitcoin wallet */
+/** A vertcoin wallet */
 message Wallet {
   /**
    * The encryption type of the wallet.
@@ -254,8 +254,8 @@ message Wallet {
   }
 
   required string network_identifier = 1; // the network used by this wallet
-  // org.bitcoin.production = production network (Satoshi genesis block)
-  // org.bitcoin.test = test network (Andresen genesis block)
+  // org.vertcoin.production = production network (Satoshi genesis block)
+  // org.vertcoin.test = test network (Andresen genesis block)
 
   // The SHA256 hash of the head of the best chain seen by this wallet.
   optional bytes last_seen_block_hash = 2;

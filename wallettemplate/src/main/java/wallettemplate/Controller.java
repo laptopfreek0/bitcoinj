@@ -1,9 +1,9 @@
 package wallettemplate;
 
-import com.google.bitcoin.core.AbstractWalletEventListener;
-import com.google.bitcoin.core.DownloadListener;
-import com.google.bitcoin.core.Utils;
-import com.google.bitcoin.core.Wallet;
+import com.google.vertcoin.core.AbstractWalletEventListener;
+import com.google.vertcoin.core.DownloadListener;
+import com.google.vertcoin.core.Utils;
+import com.google.vertcoin.core.Wallet;
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
