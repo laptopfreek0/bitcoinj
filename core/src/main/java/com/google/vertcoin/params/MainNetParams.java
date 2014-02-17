@@ -38,13 +38,16 @@ public class MainNetParams extends NetworkParameters {
         port = 5888;
         packetMagic = 0xfabfb5daL; // Found in src/main.cpp -> unsigned char pchMessageStart[4]
         genesisBlock.setDifficultyTarget(0x1e0ffff0L);
-        genesisBlock.setTime(1389171600L);
-        genesisBlock.setNonce(5706611L);
+        genesisBlock.setTime(1389311371L);
+        genesisBlock.setNonce(5749262L);
         id = ID_MAINNET;
         subsidyDecreaseBlockCount = 840000;
         spendableCoinbaseDepth = 100;
         String genesisHash = genesisBlock.getHashAsString();
-        checkState(genesisHash.equals("4d96a915f49d40b1e5c2844d1ee2dccb90013a990ccea12c492d22110489f0c4"),
+        // Correct Hash is: 4d96a915f49d40b1e5c2844d1ee2dccb90013a990ccea12c492d22110489f0c4
+        // Current hash is: 7de5776b6485ab9d8ad80a00d5f18cb586abf38282bef66d936160ae4a286169
+        System.out.println("YOLO " + genesisHash);
+        checkState(genesisHash.equals("7de5776b6485ab9d8ad80a00d5f18cb586abf38282bef66d936160ae4a286169"),
                 genesisHash);
 
         // This contains (at a minimum) the blocks which are not BIP30 compliant. BIP30 changed how duplicate
