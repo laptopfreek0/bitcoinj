@@ -43,8 +43,6 @@ public class MainNetParams extends NetworkParameters {
         id = ID_MAINNET;
         subsidyDecreaseBlockCount = 840000;
         spendableCoinbaseDepth = 100;
-        //Sha256Hash merkleroot = new Sha256Hash(4af38ca0e323c0a5226208a73b7589a52c030f234810cf51e13e3249fc0123e7);
-        genesisBlock.setMerkleRoot(merkleroot);
         String genesisHash = genesisBlock.getHashAsString();
         // Correct Hash is: 4d96a915f49d40b1e5c2844d1ee2dccb90013a990ccea12c492d22110489f0c4
         // Current hash is: 7de5776b6485ab9d8ad80a00d5f18cb586abf38282bef66d936160ae4a286169

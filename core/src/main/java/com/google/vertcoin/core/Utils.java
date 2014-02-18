@@ -206,7 +206,7 @@ public class Utils {
 
     public static byte[] scryptDigest(byte[] input) {
         try {
-                return SCrypt.scrypt(input, input, 1024, 1, 1, 32);
+                return SCrypt.scrypt(input, input, 2048, 1, 1, 32);
             } catch (Exception e) {
                 return null;
             }
